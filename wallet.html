@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="wallet-style-sheet.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wallet </title>
+</head>
+
+<body class = "">
+        <!-- this code for top nav bar wirthen by RONNY  -->
+
+
+        <div id="nav_bar">
+            <div id="nav_bar_logo">
+                <img id = 'main_logo' src="https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/logo-dark-groww.83f43714.svg" placeholder = "logo image">
+    
+            </div>
+            <div id="nav_bar_options">
+                <div id="nva_bar_explore">
+                    <p class="small_box_green">Explore</p>
+        
+                </div>
+                <div id="nva_bar_invest">
+                    <P>investments</P>
+                </div>
+    
+            </div>
+            
+            <div id="nva_bar_search">
+                <input type="text" id="nva_bar_search_input" placeholder="Search stocks and mutal Funds">
+                <div>
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/search.494f6987.svg">
+                </div>
+    
+            </div>
+            <div id="nva_bar_icons">
+                <div id="nva_bar_icons_bell">
+                <img src="images\alarm.png">
+                </div>
+                <div id="nva_bar_icons_wallet">
+                    <img src="images\wallet.png">
+    
+                </div>
+                <div id="nva_bar_icons_">
+                    <img src="images\shopping-cart-empty-side-view.png">
+    
+    
+                </div>
+                
+                
+    
+            </div>
+            <div id="nva_bar_account">
+                <div id="nva_bar_icons_dp" >
+                    <img id = 'user_image'src="images\dp.JPG">
+        
+                    </div>
+                    
+        
+                
+                <div id="info" >
+                
+    
+            
+                   <div id = 'use_info'>
+                       <div id = 'user_img'>
+                           <img src='images\dp.JPG' id="users_dp">
+                       </div>
+                       <div id = 'user_details'>
+                           <p id ='user_name'>Pilly RONNY</p>
+                           <p id = 'user_email'>RONNY.rock3823@gmail.com</p>
+                       </div>
+    
+                   </div>
+                   <div id = 'info_list'>
+    
+                    <div id = 'bank'>
+                        <div id= 'bank_logo' class= 'info_img'>
+                         <img src = "images\museum.png">
+                        </div>
+                        <div>
+                            <p class="info_p">Bank & AutoPay</p>
+     
+                        </div>
+     
+                     </div>  
+                      <div id = 'infor_import'>
+                         <div id= 'import_logo' class= 'info_img'>
+                          <img src = "images\folder.png">
+                         </div>
+                         <div>
+                             <p class="info_p" >Import Funds</p>
+      
+                         </div>
+     
+                     </div>
+                     <div id = 'info_watchlist'>
+                             <div id= 'watchlist_logo' class= 'info_img'>
+                              <img src = "images\bookmark.png">
+                             </div>
+                             <div>
+                                 <p class="info_p">Watchlist</p> 
+          
+                             </div>
+                     </div>
+     
+                      <div id = 'info_orders'>
+                                 <div id= 'order_logo' class= 'info_img'>
+                                  <img src = "images\page.png">
+                                 </div>
+                                 <div>
+                                     <p class="info_p"> Orders</p>
+              
+                                 </div>
+                      </div>
+     
+                     <div id = 'info_sips'>
+                                     <div id= 'sips_logo' class= 'info_img'>
+                                      <img src = "images\calendar.png">
+                                     </div>
+                                     <div>
+                                         <p class="info_p">SIPs </p>
+                  
+                                     </div>
+                     </div>
+     
+                     <div id = 'info_help'>
+                                         <div id= 'help_logo' class= 'info_img'>
+                                          <img src = "images\phone.png">
+                                         </div>
+                                         <div>
+                                             <p class="info_p">Help & Support </p>
+                      
+                                         </div>
+                     </div>
+                         <div id = 'info_settings'>
+                                             <div id= 'settings_logo' class= 'info_img'>
+                                              <img src = "images\settings.png">
+                                             </div>
+                                             <div>
+                                                 <p class="info_p"> Settings</p>
+                          
+                                             </div>
+                          </div>
+                         <div id = 'dark_mode' onclick = 'dark()'>
+                                                 <div  class= 'info_img'>
+                                                  <img src = "images\night-mode.png">
+                                                 </div>
+                                                 <div>
+                                                     <p class="info_p"> Dark Mode</p>
+                              
+                                                 </div>
+                         </div>
+                             <div id = 'logout'>
+                                  <div  class= 'info_img'>
+                                   <img src = "images\in.png">
+                                  </div>
+                             <div >
+                                  <p class="info_p"> Log Out</p>
+                                  
+                                 </div>
+                              </div>
+    
+                   </div>
+                
+    
+                  
+    
+    
+                   </div>
+    
+                </div>
+               
+    
+            </div>
+           
+        <!-- this code for top nav bar wirthen by RONNY  --- end-->
+
+   
+    
+
+
+    <div id="wallet-container">
+        <div id="wallet-display">
+            <div id = 'wallet-display-top'>
+                <p> BALANCE AVAILABLE </p>
+                <h1 id="wallet-value"> </h1>
+            </div>
+            <div class = "wallet-below-header">
+                <p> Details </p>
+            </div>
+
+            <div id = "wallet-display-below">
+                <div >
+                    <div>
+                        <p id = '---'> Closing Balance(CB): </p>
+                    </div>
+                    <div>
+                        <p id = "cbWallet"> 0.00 </p>
+                    </div>
+                </div>
+                <div>
+                    <p id = '---'> Ongoing Transactions: </p>
+                    <p>0.00</p>
+                </div>
+                <div>
+                    <p id = '---'> Balance Available: </p>
+                    <p id = 'baWallet'>0.00</p>
+                </div>
+            </div>
+        </div>
+        <div id="wallet-top-up">
+            <div class = "wallet-top-up-header">
+                <p> DEPOSITE </p>
+            </div>
+            <div id = "wallet-top-up-value">
+                <div id="wallet-value-inp">
+                    <p>Enter Amount </p>
+                    <p id = "permPlaceHolder">₹</p>
+                    <input type="text" id="wallet-value-inputBox" placeholder="0" >
+                </div>
+            </div>
+
+            <div class="top-up-btn">
+                <button onclick="plusHundred()"> +₹100 </button>
+                <button onclick="plusFiveHundred()"> +₹500 </button>
+            </div>
+            <hr id = "hr">
+            <div id = "wallet-top-up-below">
+                <p> Pay Using: </p>
+                <a href=""> More Options </a>
+            </div>
+            <div id = "wallet-id-input">
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/upi_icon.fa375ebf.svg" alt="">
+                <input type="text" name="" id="wallet-upi-inp" placeholder="Enter UPI ID">
+            </div>
+            <div id = "nonVisibleP">
+                <p id = "nonVisP"> Successfull !!</p>
+            </div>
+            <button onclick="deposite()" id = "deposite-btn"> DEPOSIT MONEY </button>
+        </div>
+    </div>
+
+    <div id = 'last_box'>
+
+        <div>
+            <div id = 'contact'>
+                <div id = 'contact_grow_img'>
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/logo-light-groww.1815ad63.svg">   
+
+                    
+
+                </div>
+                <div id = 'contact_address'>
+                    <p>No.11, 2nd floor, 80FT Road </p>
+                        <p>4th Block, S.T Bed</p> 
+                        <p>Kormangala, Bengaluru - 560034</p>  
+                        
+                        <p><u>Contact Us</u></p>
+
+
+                </div>
+                <div id = 'contact_socialMedia'>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/fb_icon_groww.1c94e937.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/twitter_icon_groww.4cb988f6.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/yt_icon_groww.ec96b677.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/instagram_icon_groww.0454c1a2.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/linkedin_icon_groww.b15f8240.svg" ></div>
+                    
+
+                </div>
+
+            </div>
+            <div class = 'last_box_info'>
+                <h1 class="last_box_head">GROWW</h1>
+                <p>About Us</p>
+                <p>AMC Mutual Funds</p>
+                <p>Pricing</p>
+                <p>Groww Q&A</p>
+                <p>Blog<p>
+                <p>Media & Press</p>
+                <p>Help and Support</p>
+
+
+
+            </div>
+            <div class = 'last_box_info'>
+
+                <h1 class="last_box_head">EXPLORE</h1>
+            <p>Mutual Funds</p>
+            <p>Stocks</p>
+            <p>NFO</p>
+            <p>IPO</p>
+            <p>US Stocks</p>
+            <p>Fixed Deposit</p>
+            <p>Gold</p>
+
+            </div>
+            
+
+                <div class = 'last_box_info'>
+                    <h1 class="last_box_head">RESOURCES</h1>
+                    <p>Mutual Fund Beginners</p>
+                    <p>Learn Stocks Market</p>
+                    <p>Calculators</p>
+                    <p>Glossary</p>
+                    <p>Open Demat Account</p>
+                    <p>Groww Digest</p>
+                    <p>Download Forms</p>
+                </div>
+
+            
+
+        </div>
+        <hr>
+
+    <div id = 'last_box_store'> 
+        <div>
+            <p>Ⓒ 2016-2021 Groww. All rights reserved, Built with ❤️ in India</p>
+
+        </div>
+
+        <div id= 'stores'>
+            <div>
+                <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/app-store-logo.060773ea.svg'>
+            </div>
+            <div>
+                <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/google-play-badge.0547a72f.svg'>
+            </div>
+
+        </div>
+        
+    </div>
+
+</div>
+
+</body>
+
+</html>
+
+<script src="wallet.js"></script>
